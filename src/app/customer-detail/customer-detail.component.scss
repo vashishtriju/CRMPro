@@ -1,0 +1,47 @@
+.customers-detail {
+    display: flex; /* or inline-flex */
+    flex-direction:row;
+    flex-wrap: wrap;
+
+    .customers-detail-left {
+        margin: 10px;
+        width: 20%;
+        position: relative;
+        float:left;
+        .example-full-width{
+            width:100%;
+        }
+        .example-margin {
+            margin: 0 10px;
+          }
+    }
+    .customers-detail-middle {
+        margin: 10px;
+        width: 50%;
+        position: relative;
+        float:left;
+        .example-full-width{
+            width:100%;
+        }
+        .example-margin {
+            margin: 0 10px;
+          }
+    }
+    .customers-detail-right {
+        margin: 10px;
+        width: 25%;
+        position: relative;
+        float:left;
+        .example-full-width{
+            width:100%;
+        }
+        .example-margin {
+            margin: 0 10px;
+          }
+          
+    }
+  }
+ .button-row button,
+          .button-row a {
+            margin-right: 8px;
+          }

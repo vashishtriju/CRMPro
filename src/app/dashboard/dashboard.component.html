@@ -1,0 +1,27 @@
+<div class="dashboard">
+<mat-card class="dashboard-item">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Lead conversions</mat-card-title>
+      <mat-card-subtitle>Month over month</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <ngx-charts-bar-vertical
+        [scheme]="colorScheme"
+        [results]="single"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [legendPosition]="legendPosition"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [barPadding]="paddingInBars"
+        (select)="onSelect($event)">
+        </ngx-charts-bar-vertical>
+    </mat-card-content>
+  </mat-card>
+</div>
+

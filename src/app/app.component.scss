@@ -1,0 +1,33 @@
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+  .container {
+    height: 90vh; 
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidenav-content {
+    height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+  
+ .sidenav{
+   width: 300px;
+ }
+  
+  mat-sidenav {
+    width: 300px;
+  }
+
+  mat-list-item {
+   align-items: center;
+  }
+
+  mat-nav-list a.active {
+    background: #b395e7;
+}

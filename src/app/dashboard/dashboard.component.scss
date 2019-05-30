@@ -1,0 +1,13 @@
+.dashboard {
+    display: flex; /* or inline-flex */
+    flex-direction:row;
+    margin: 15px;
+
+
+    .dashboard-item {
+        margin: 10px;
+        width: 100%;
+        position: relative;
+    }
+  }
+
