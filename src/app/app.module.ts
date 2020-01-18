@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './common/app-material/app-material.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LeadsComponent } from './leads/leads.component';
@@ -64,6 +64,8 @@ import { ListingsDetailComponent } from './listings/listings-detail/listings-det
     OverlayPanelModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
+  bootstrap: [AppComponent],
+  exports: [AppMaterialModule, NgxChartsModule , OverlayPanelModule]
 })
 export class AppModule { }
