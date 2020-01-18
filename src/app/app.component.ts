@@ -7,23 +7,55 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CRMPro';
-  links : any = [];
+  links: any = [];
 
-  constructor(){
+  constructor() {
     this.loadLinks();
   }
-  loadLinks(){
+  loadLinks() {
     this.links = [{
-      "label": "Dashboard",
-      "route": "dashboard"
+      label: 'Dashboard',
+      route: 'dashboard'
     },
     {
-      "label": "Customers",
-      "route": "customers"
+      label: 'Leads',
+      route: 'leads'
     },
     {
-      "label": "Leads",
-      "route": "leads"
-    }]
+      label: 'Department',
+      route: 'department'
+    },
+      {
+        label: 'Deals',
+        route: 'deals'
+      },
+      {
+        label: 'Contacts',
+        route: 'contacts'
+      },
+      {
+        label: 'Activities',
+        route: 'activities'
+      },
+      {
+        label: 'Reports',
+        route: 'reports'
+      },
+      {
+        label: 'Forecasts',
+        route: 'forecasts'
+      },
+      {
+        label: 'Projects',
+        route: 'projects'
+      },
+      {
+        label: 'Signup',
+        route: 'signup'
+      },
+      {
+        label: 'Login',
+        route: 'login'
+      }];
   }
 }
